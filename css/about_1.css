@@ -1,0 +1,256 @@
+/*
+* 	Info - About MySelf
+*/
+#about_intro {
+	font-family: Verdana, Geneva, sans-serif;
+	width: 900px;
+	margin-left: auto;
+	font-size: 18px;
+	color: #fff;
+	text-align: center;
+	margin-top: -10px;
+	padding: 15px;
+	margin-right: auto;
+}
+#about_image {
+	height: 150px;
+	width: 165px;
+	margin-right: auto;
+	margin-left: auto;
+	border-top-left-radius: 50px;
+	border-top-right-radius: 50px;
+	background-color: #FFF;
+	margin-bottom: -15px;
+	margin-top: -5px;
+}
+.profile_picture {
+	height: 150px;
+	width: 128px;
+	border-radius: 75px;
+}
+
+/*
+* 	Info - Edit Description
+*/
+#about_outerDiv{
+	width: 960px;
+	overflow: auto;
+	position: relative;
+	margin-bottom: 20px;
+	margin-right: auto;
+	margin-left: auto;
+}
+
+#about_descriptionDiv {
+	font-family: "Sans_Serif";
+	width: 460px;
+	height: 340px;
+	font-size: 16px;
+	text-align: center;
+	color: #FFF;
+	float: left;
+	margin-top: 20px;
+}
+#about_descriptionDiv input[type="submit"] {
+	width: 100px;
+	height: 30px;
+	background-color: #27ae60;
+	border-top-right-radius: 5px;
+	border-top-left-radius: 5px;
+	border-bottom-right-radius: 5px;
+	border-bottom-left-radius: 5px;
+	box-shadow: inset 0px -1px 2px #000;
+	font-family: "Sans_Serif";
+	font-size: 18px;
+	color: #FFF;
+	border: 1px solid #000;
+}
+#about_descriptionDiv input[type="submit"]:hover, input[type="submit"]:focus {
+	background-color: #2ecc71;
+}
+#about_description_board {
+	height: 250px;
+	width: 410px;
+	margin-bottom: 20px;
+	resize: none;
+}
+/*
+* 	Info - New Skills
+*/
+#about_skillsDiv{
+	width: 460px;
+	height: 340px;
+	font-size: 16px;
+	text-align: center;
+	color: #FFF;
+	padding-left: 10px;
+	float: left;
+	margin-top: 20px;
+}
+#about_skillsDiv select[name="levelName"]{
+	background: url(../images/forms/drop_down_icon.png) no-repeat right #FFF;
+	width: 414px;
+	height: 36px;
+	padding: 5px;
+	line-height: 1;
+	font-family: Arial;
+	font-size: 18px;
+	margin-bottom: 15px;
+	-webkit-appearance: none;
+}
+#about_skillsDiv input[type="submit"] {
+	width: 100px;
+	height: 30px;
+	border-top-right-radius: 5px;
+	border-top-left-radius: 5px;
+	border-bottom-right-radius: 5px;
+	border-bottom-left-radius: 5px;
+	background-color: #27ae60;
+	box-shadow: inset 0px -1px 2px #000;
+	font-family: "Sans_Serif";
+	font-size: 18px;
+	color: #FFF;
+	border: 1px solid #000;
+	margin-top: 152px;
+}
+#about_skillsDiv input[type="submit"]:hover, input[type="submit"]:focus {
+	background-color: #2ecc71;
+}
+#about_edit_Text{
+	height: 25px;
+	font-family: Verdana, Geneva, sans-serif;
+	font-size: 18px;
+	text-align: left;
+	padding-left: 15px;
+	margin-left: 23px;
+	border-left-width: 2px;
+	border-left-style: solid;
+	border-left-color: #FFF;
+}
+#about_skill_Input{
+	width: 410px;
+	height: 30px;
+	font-family: Arial;
+	font-size: 18px;
+	margin-bottom: 15px;
+}
+
+/*
+*	Tags - About MySelf Knowledge Level
+*	The bellow css classes and ids are used to display my current progress level.
+*/
+#programming_outerDiv {
+	width: 670px;
+	margin-right: auto;
+	margin-left: auto;
+	margin-top: 30px;
+}
+.programming_innerDiv{
+	width: 670px;
+	height: 50px;
+	margin-right: auto;
+	margin-left: auto;
+}
+.programming_language{
+	width: 300px;
+	height: 20px;
+	font-family: Verdana, Geneva, sans-serif;
+	text-align: left;
+	float: left;
+	color: #FFF;
+}
+.programming_level{
+	width: 300px;
+	height: 20px;
+	font-family: Verdana, Geneva, sans-serif;
+	text-align: right;
+	float: right;
+	color: #FFF;
+	margin-top: -20px;
+}
+.programming_value{
+	width: 65px;
+	height: 20px;
+	font-family: Verdana, Geneva, sans-serif;
+	color: #FFF;
+	text-align: center;
+	margin-right: auto;
+	margin-left: auto;
+}
+progress,progress[role]{
+	/* Turns off styling - not usually needed, but good to know. */
+	appearance: none;
+	-moz-appearance: none;
+	-webkit-appearance: none;
+
+	/* gets rid of default border in Firefox and Opera. */ 
+	border: none;
+
+	/* Needs to be in here for Safari polyfill so background images work as expected. */
+	background-size: auto;
+	
+	/* Dimensions */
+	width: 670px;
+	height: 15px;	
+}
+
+/* Polyfill */
+progress[role]:after {
+	background-image: none; /* removes default background from polyfill */
+}
+
+/* Ensure fallback text doesn't appear in polyfill */
+progress[role] strong {
+	display: none;
+}
+/*
+* The below css blocks are used for the progress value background
+*/
+progress,progress[role][aria-valuenow] {
+	background: #FFF !important;
+}
+
+progress::-webkit-progress-bar {
+	background: #FFF;
+}
+
+/*
+* The below css blocks are used for the progress value bar
+*/
+/*IE 10*/
+progress {
+	color: #96281B;
+}
+
+/*FireFox*/
+progress::-moz-progress-bar {
+	background: #96281B;
+}
+
+/*Chrome*/
+progress::-webkit-progress-value {
+	background: #96281B;
+}
+
+/*Polyfill*/
+progress[aria-valuenow]:befor e{
+	background: #96281B;
+}
+.programming_increasePercentage{
+	height: 20px;
+	width: 20px;
+	float: right;
+	margin-right: -30px;
+	background-image: url(../images/home/add.png);
+	background-size: 20px 20px;
+	border: none;
+}
+.programming_decreasePercentage{
+	height: 20px;
+	width: 20px;
+	float: left;
+	margin-left: -30px;
+	background-image: url(../images/home/edit.png);
+	background-size: 20px 20px;
+	border: none;
+}

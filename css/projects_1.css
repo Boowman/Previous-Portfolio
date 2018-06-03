@@ -1,0 +1,374 @@
+#project_Add_Text{
+	height: 25px;
+	font-family: Verdana, Geneva, sans-serif;
+	font-size: 18px;
+	text-align: left;
+	padding-left: 15px;
+	margin-left: 23px;
+	border-left-width: 2px;
+	border-left-style: solid;
+	border-left-color: #FFF;
+}
+#project_Select{
+	width: 414px;
+	height: 30px;
+	font-family: Arial;
+	font-size: 18px;
+	margin-bottom: 15px;
+}
+#project_TextArea{
+	width: 408px;
+	height: 150px;
+	font-family: Arial;
+	font-size: 15px;
+	margin-bottom: 15px;
+	resize: none;
+	float: left;
+	margin-left: 22px;
+}
+#project_Text_Input{
+	width: 410px;
+	height: 30px;
+	font-family: Arial;
+	font-size: 18px;
+	margin-bottom: 15px;
+}
+#project_ImageUpload{
+	width: 410px;
+	height: 30px;
+	font-family: Arial;
+	font-size: 18px;
+	margin-bottom: 15px;
+	margin-left: -4px;
+}
+#description_text {
+	width: 960px;
+	margin-top: 10px;
+}
+#description_help {
+	text-align: left;
+	width: 200px;
+	height: auto;
+	margin-left: 460px;
+	font-family: Verdana, Geneva, sans-serif;
+	font-size: 14px;
+	font-weight: normal;
+}
+#add_project_outerDiv {
+	min-height: 230px;
+	width: 960px;
+	margin-bottom: -40px;
+}
+#news_form {
+	width: 460px;
+	font-size: 16px;
+	text-align: center;
+	color: #FFF;
+	padding-left: 10px;
+	margin-top: 20px;
+	margin-bottom: 50px;
+}
+#news_form input[type="submit"] {
+	width: 100px;
+	height: 30px;
+	border-top-right-radius: 5px;
+	border-top-left-radius: 5px;
+	border-bottom-right-radius: 5px;
+	border-bottom-left-radius: 5px;
+	background-color: #27ae60;
+	box-shadow: inset 0px -1px 2px #000;
+	font-family: "Sans_Serif";
+	font-size: 18px;
+	color: #FFF;
+	border: 1px solid #000;
+	margin-top: 15px;
+}
+#news_form input[type="submit"]:hover, input[type="submit"]:focus {
+	background-color: #2ecc71;
+}
+
+/*
+*	Tags - Projects Updates Games 
+*	The bellow css classes are used to display the projects
+*/
+
+.projects_list {
+	width: 466px;
+	min-height: 200px;
+	height: auto;
+	margin-left: 10px;
+	float: left;
+}
+.project_face {
+	background-color: #000;
+	background-repeat: no-repeat;
+	background-size: contain;
+	min-height: 129px;
+	min-width: 229px;
+	max-height: 262px;
+	max-width: 466px;
+	display: inline-block;
+	margin-right: 2px;
+	margin-bottom: 5px;
+	border: 1px solid #000;
+}
+.project_hoverBg {
+	background-color: #000;
+	font-family: Tahoma, Geneva, sans-serif;
+	font-size: 24px;
+	color: #FFF;
+	text-align: center;
+	width: auto;
+	height: auto;
+	opacity: 0;   
+}
+.project_hoverBg:hover {
+	opacity: 0.7;
+}
+/*
+*	Tags - ProjectInfo MoreInformations
+*	The bellow css ids are used to display the selected project in the more information tab.
+*/
+#projectInfo_outerDiv{
+	width: 960px;
+	margin-right: auto;
+	margin-left: auto;
+	margin-top: -10px;
+}
+#projectInfo_Image{
+	width: 960px;
+	height: 540px;
+	margin-right: auto;
+	margin-left: auto;
+	z-index: 0;
+}
+#projectInfo_title{
+	width: 960px;
+	height: 40px;
+	min-width: 200px;
+	margin-right: auto;
+	margin-left: auto;
+	position: absolute;
+}
+#projectInfo_title_bg{
+/*	border-top-left-radius: 50px;
+	border-top-right-radius: 50px;
+	-webkit-top-bottom-left-radius: 50px;
+	-webkit-top-bottom-right-radius: 50px;
+	-moz-top-bottom-left-radius: 50px;
+	-moz-top-bottom-right-radius: 50px;*/
+}
+#projectInfo_title_text{
+	height: 40px;
+	margin-top: -40px;
+	font-size: 25px;
+	text-align: center;
+	font-family: Verdana, Geneva, sans-serif;
+	padding-bottom: 10px;
+}
+#projectInfo_Description_Div{
+	width: 960px;
+	height: 100px;
+	margin-right: auto;
+	margin-left: auto;
+	margin-top: -104px;
+	position: absolute;
+}
+#projectInfo_Description_Bg{
+/*	border-bottom-left-radius: 50px;
+	border-bottom-right-radius: 50px;
+	-webkit-bottom-bottom-left-radius: 50px;
+	-webkit-bottom-bottom-right-radius: 50px;
+	-moz-bottom-bottom-left-radius: 50px;
+	-moz-bottom-bottom-right-radius: 50px;*/
+}
+#projectInfo_Description_Text{
+	font-family: 	Verdana, Geneva, sans-serif;
+	height: 		100px;
+	margin-top: 	-104px;
+	font-size: 		16px;
+	text-align: 	center;
+	padding-top: 	10px;
+	padding-bottom: 10px;
+	padding-left: 	15px;
+	padding-right: 	15px;
+}
+
+/*
+*	Tags - UpdateInfo MoreInformations
+*	The bellow css classes are used to display the updates for the selected project.
+*/
+#project_outerDiv{
+	width: 850px;
+}
+.project_div {
+	height: 350px;
+	width: 960px;
+	margin-right: auto;
+	margin-left: auto;
+	float: left;
+	margin-top: 15px;
+}
+.project_video_div {
+	height: 394px;
+	width: 500px;
+	margin-top: 17.5px;
+	float: left;
+}
+.project_title_div {
+	width: 440px;
+	height: 50px;
+	float: left;
+	margin-top: 17.5px;
+	margin-left: 10px;
+	border-left-width: medium;
+	border-left-style: solid;
+	border-left-color: #000;
+}
+.project_date {
+	height: 25px;
+	width: auto;
+	text-align: left;
+	margin-bottom: -5px;
+	font-family: Tahoma, Geneva, sans-serif;
+	color: #900;
+	font-weight: normal;
+	font-size: 20px;
+	padding-left: 5px;
+}
+.project_title {
+	height: 25px;
+	width: auto;
+	text-align: left;
+	font-family: Tahoma, Geneva, sans-serif;
+	font-size: 24px;
+	color: #FFF;
+	font-weight: bold;
+	padding-left: 5px;
+}
+.project_description {
+	height: 145px;
+	width: 432px;
+	font-family: arial,sans-serif;
+	font-weight: normal;
+	font-size: 14px;
+	text-align: left;
+	color: #FFF;
+	padding: 5px;
+	margin-top: 5px;
+	margin-left: 10px;
+	border-top-width: thin;
+	border-top-style: solid;
+	border-top-color: #777;
+	float: left;
+}
+.project_description a{
+	color: #09F;
+	text-decoration: none;	
+}
+.project_description a:hover{
+	color: #96281B;
+	text-decoration: none;
+}
+.project_images_list {
+	height: 110px;
+	width: 442px;
+	float: left;
+	margin-top: 6px;
+	margin-left: 10px;
+}
+.project_image {
+	background-position: center;
+	background-size: contain;
+	background-repeat: no-repeat;
+	height: 77px;
+	width: 136px;
+	background-color: #603;
+	float: left;
+	margin-left: 8px;
+	-webkit-box-shadow: 0px 40px 56px -18px rgba(20,20,20,1);
+	-moz-box-shadow: 0px 40px 56px -18px rgba(20,20,20,1);
+	box-shadow: 0px 40px 56px -18px rgba(20,20,20,1);
+}
+
+/*
+*	Tags - Gallery MoreInformations
+*	The bellow css classes and ids are used to display all the images from that certain project.
+*/
+#gallery_outerDiv{
+	width: 850px;
+	margin-right: auto;
+	margin-left: auto;
+	margin-top: 50px;
+	padding-bottom: 100px;
+	overflow: auto;
+}
+#gallery_title{
+	width: 840px;
+	height: 35px;
+	padding-left: 5px;
+	padding-top: 5px;
+	font-family: Verdana, Geneva, sans-serif;
+	font-size: 25px;
+	text-align: left;
+	border-left-width: 2px;
+	border-left-style: solid;
+	border-left-color: #FFF;
+}
+#gallery_innerDiv{
+	width: 830px;
+	margin-right: auto;
+	margin-left: auto;
+}
+.gallery_images{
+	width: 256px;
+	height: 150px;
+	margin-left: auto;
+	margin-right: auto;
+	float: left;
+	margin: 10px;
+	-webkit-box-shadow: 0px 40px 56px -18px rgba(20,20,20,1);
+	-moz-box-shadow: 0px 40px 56px -18px rgba(20,20,20,1);
+	box-shadow: 0px 40px 56px -18px rgba(20,20,20,1);
+}
+/*
+*
+*	Tags NavigationMenu MoreInformationNavigation
+*	The below ids are going to be used in the navigation menu that will be located on the more inforamtion page for each project.
+*
+*/
+
+#project_navigationOuterDiv{
+	width: 960px;
+	height: 30px;
+	border-bottom-width: 1px;
+	border-bottom-style: solid;
+	border-bottom-color: #96281B;
+}
+#project_navigationOuterDiv form{
+	height: 30px;
+	margin-top: 0px;
+	padding-left: 50px;
+}
+#project_navigationOuterDiv input[type="submit"]{
+	width: 100px;
+	height: 30px;
+	font-family: Verdana, Geneva, sans-serif;
+	font-size: 20px;
+	float: left;
+	margin-top: 1px;
+	padding-top: 2px;
+	background-color: #1E1E1E;
+	margin-right: 15px;
+	border: 1px solid #96281B;
+	color: #FFF;
+}
+#project_navigationOuterDiv input[type="submit"]:hover{
+	background-color: #2C2F38;
+}
+#project_navigationSelected{
+	width: 100px;
+	height: 3px;
+	margin-top: 3px;
+	background-color: #96281B;
+}
